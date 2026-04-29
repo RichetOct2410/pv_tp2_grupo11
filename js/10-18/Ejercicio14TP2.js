@@ -1,0 +1,23 @@
+    let elementos = parseInt(prompt("Ingrese la cantidad de elementos del arreglo: "));
+    while(isNaN(elementos) || elementos <= 0){
+    elementos = parseInt(prompt("Ingrese un numero valido"));
+  }
+    let numeros = [];
+    for (let i = 0; i < elementos; i++){
+        let num = parseInt(prompt("Ingrese el numero a duplicar: "));
+        while(isNaN(num)){
+    num = parseInt(prompt("Ingrese un numero valido"));
+  }
+        numeros.push(num);
+    }
+    const duplicar = (arreglo) => {
+        let nuevo = [];
+        for (let i = 0; i < arreglo.length; i++){
+            nuevo.push(arreglo[i]*2)
+        }
+    return nuevo;}
+    let resultado = duplicar(numeros);
+    document.write(`
+        <h2>Resultados:</h2>
+        <p>Arreglo Original: ${numeros}</p>
+        <p>Arreglo Duplicado: ${resultado}</p>`)
