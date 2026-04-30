@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Ejercicio 18</title>
-</head>
-<body>
-
-<script>
-  let num1 = parseInt(prompt("Ingrese el numero 1: "));
+ let num1 = parseInt(prompt("Ingrese el numero 1: "));
   while(isNaN(num1)){
     num1 = parseInt(prompt("Ingrese un numero valido"));
   }
@@ -29,8 +20,3 @@
   document.write(`
     <h2>Mayor, menor o igual</h2>
     <p>${resultado}</p>`);
-
-</script>
-
-</body>
-</html>

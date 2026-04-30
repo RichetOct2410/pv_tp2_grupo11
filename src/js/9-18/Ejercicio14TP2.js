@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Ejercicio 14</title>
-</head>
-<body>
-
-<script>
     let elementos = parseInt(prompt("Ingrese la cantidad de elementos del arreglo: "));
     while(isNaN(elementos) || elementos <= 0){
     elementos = parseInt(prompt("Ingrese un numero valido"));
@@ -30,8 +21,3 @@
         <h2>Resultados:</h2>
         <p>Arreglo Original: ${numeros}</p>
         <p>Arreglo Duplicado: ${resultado}</p>`)
-
-</script>
-
-</body>
-</html>
