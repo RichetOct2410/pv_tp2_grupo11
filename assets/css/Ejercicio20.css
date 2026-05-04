@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --rosa-claro: #f8c8dc;
+  --rosa-medio: #ec6f9e;
+  --rosa-oscuro: #a83265;
+  --rosa-mas-oscuro: #6c1347;
+
+  --blanco: #ffffff;
+  --texto: #161616;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--rosa-oscuro);
+  color: var(--texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  background-color: var(--blanco);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--rosa-oscuro);
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--texto);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--rosa-suave);
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: var(--rosa-medio);
+  box-shadow: 0 0 5px rgba(236, 111, 158, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--rosa-medio);
+  color: var(--texto);
+  border: 2px solid var(--rosa-medio);
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--rosa-fuerte);
+  border: 2px solid var(--rosa-mas-oscuro);
+  box-shadow: 0 0 8px rgba(123, 5, 56, 0.6);
+  transform: translateY(-2px);
+}
+
+.info-box {
+  animation: aparecer 0.3s ease;
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  font-weight: 500;
+  background-color: var(--rosa-claro);
+  border: 2px solid var(--rosa-mas-oscuro);
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.display-area {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

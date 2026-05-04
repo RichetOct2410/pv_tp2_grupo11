@@ -1,0 +1,1 @@
+export const obtenerMensaje = (r) => `Seleccionaste: ${r}`;

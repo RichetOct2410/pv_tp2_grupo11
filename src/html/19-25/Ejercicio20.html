@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pv_tp2_grupo11/assets/css/Ejercicio20.css">
+    <title>Ejercicio 20</title>        
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1>Registro</h1>
+            <p class="subtitle">Complete los datos</p>
+            
+            <form id="form-carga">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese un Nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ingrese un apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lu">Libreta Universitaria</label>
+                    <input type="number" max="999" min="99" id="lu" placeholder="Ingrese Lu" required>
+                </div>
+
+                <button type="submit" id="btn-procesar">Registrar Estudiante</button>
+            </form>
+        </section>
+
+        <section id="resultado" class="display-area"></section>
+    </main>   
+    
+    <script type="module" src="../../js/19-25/Ejercicio20TP2.js"></script>
+</body>
+</html>
